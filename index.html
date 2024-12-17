@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K-Drama World</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-gradient-to-br from-indigo-50 to-purple-100 min-h-screen">
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-pink-500 to-purple-600 text-white p-4 md:p-6 shadow-2xl">
+    <div class="container mx-auto flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <i data-lucide="film" class="mr-2 md:mr-4" style="width: 30px; height: 30px;"></i>
+        <h1 class="text-2xl md:text-4xl font-extrabold tracking-wide">K-Drama World</h1>
+      </div>
+      <!-- Mobile Menu Toggle -->
+      <div class="md:hidden">
+        <button id="menu-toggle" class="focus:outline-none">
+          <i data-lucide="menu" style="width: 30px; height: 30px;"></i>
+        </button>
+      </div>
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex space-x-4">
+        <a href="#" class="hover:text-yellow-200 transition">Home</a>
+        <a href="#" class="hover:text-yellow-200 transition">Genres</a>
+        <a href="#" class="hover:text-yellow-200 transition">Trending</a>
+      </nav>
+    </div>
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden md:hidden mt-4">
+      <a href="#" class="block py-2 hover:bg-purple-700 transition">Home</a>
+      <a href="#" class="block py-2 hover:bg-purple-700 transition">Genres</a>
+      <a href="#" class="block py-2 hover:bg-purple-700 transition">Trending</a>
+    </div>
+  </header>
+
+  <!-- Movie Grid -->
+  <main class="container mx-auto p-4 md:p-8">
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Movie Card 1 -->
+      <div class="bg-pink-100 rounded-2xl shadow-lg overflow-hidden transform transition hover:scale-105 hover:shadow-2xl">
+        <div class="relative">
+          <img src="https://media.themoviedb.org/t/p/w1000_and_h450_multi_faces/bGcMuFVzW0LitMJWSzp4EjmzQ0b.jpg" alt="Crash Landing on You" class="w-full h-64 md:h-96 object-cover">
+          <div class="absolute top-4 right-4 bg-pink-500 text-white px-3 py-1 rounded-full flex items-center">
+            <i data-lucide="star" class="mr-1" style="width: 16px; height: 16px;"></i> 8.7
+          </div>
+        </div>
+        <div class="p-4 md:p-6">
+          <h2 class="text-xl md:text-2xl font-bold mb-2 text-pink-900">Light Shop </h2>
+          <p class="text-gray-600 mb-4 text-sm md:text-base">(2024) | Mystery, Drama</p>
+          <p class="text-gray-700 mb-4 text-xs md:text-sm">In a mysterious shop that sells lamps, the dead may return to the world of the living, while the living may not walk out alive.</p>
+          <div class="flex justify-between items-center">
+            <button class="bg-pink-500 text-white px-4 py-2 rounded-lg flex items-center hover:brightness-110 transition text-sm"
+                  onclick="window.location.href='/movie01.html';">
+                  <i data-lucide="play" class="mr-2" style="width: 16px; height: 16px;"></i> Download
+            </button>
+
+            <button class="text-red-500 hover:bg-red-100 p-2 rounded-full transition">
+              <i data-lucide="heart" style="width: 20px; height: 20px;"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Movie Card 2 -->
+      <div class="bg-teal-100 rounded-2xl shadow-lg overflow-hidden transform transition hover:scale-105 hover:shadow-2xl">
+        <div class="relative">
+          <img src="https://via.placeholder.com/300x450?text=Descendants+of+the+Sun" alt="Descendants of the Sun" class="w-full h-64 md:h-96 object-cover">
+          <div class="absolute top-4 right-4 bg-teal-500 text-white px-3 py-1 rounded-full flex items-center">
+            <i data-lucide="star" class="mr-1" style="width: 16px; height: 16px;"></i> 8.5
+          </div>
+        </div>
+        <div class="p-4 md:p-6">
+          <h2 class="text-xl md:text-2xl font-bold mb-2 text-teal-900">Descendants of the Sun</h2>
+          <p class="text-gray-600 mb-4 text-sm md:text-base">2016 | Romance, Action</p>
+          <p class="text-gray-700 mb-4 text-xs md:text-sm">A love story between a special forces captain and a surgeon.</p>
+          <div class="flex justify-between items-center">
+            <button class="bg-teal-500 text-white px-4 py-2 rounded-lg flex items-center hover:brightness-110 transition text-sm">
+              <i data-lucide="play" class="mr-2" style="width: 16px; height: 16px;"></i> Trailer
+            </button>
+            <button class="text-red-500 hover:bg-red-100 p-2 rounded-full transition">
+              <i data-lucide="heart" style="width: 20px; height: 20px;"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Movie Card 3 -->
+      <div class="bg-purple-100 rounded-2xl shadow-lg overflow-hidden transform transition hover:scale-105 hover:shadow-2xl">
+        <div class="relative">
+          <img src="https://via.placeholder.com/300x450?text=Goblin" alt="Goblin" class="w-full h-64 md:h-96 object-cover">
+          <div class="absolute top-4 right-4 bg-purple-500 text-white px-3 py-1 rounded-full flex items-center">
+            <i data-lucide="star" class="mr-1" style="width: 16px; height: 16px;"></i> 8.9
+          </div>
+        </div>
+        <div class="p-4 md:p-6">
+          <h2 class="text-xl md:text-2xl font-bold mb-2 text-purple-900">Goblin</h2>
+          <p class="text-gray-600 mb-4 text-sm md:text-base">2016 | Fantasy, Romance</p>
+          <p class="text-gray-700 mb-4 text-xs md:text-sm">An immortal goblin seeks his bride to end his cursed existence.</p>
+          <div class="flex justify-between items-center">
+            <button class="bg-purple-500 text-white px-4 py-2 rounded-lg flex items-center hover:brightness-110 transition text-sm">
+              <i data-lucide="play" class="mr-2" style="width: 16px; height: 16px;"></i> Trailer
+            </button>
+            <button class="text-red-500 hover:bg-red-100 p-2 rounded-full transition">
+              <i data-lucide="heart" style="width: 20px; height: 20px;"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-pink-600 to-purple-700 text-white p-4 md:p-6 text-center">
+    <p class="text-xs md:text-base tracking-wide">© 2024 K-Drama World - Educational Project</p>
+  </footer>
+
+  <!-- Script for Lucide Icons -->
+  <script>
+    lucide.createIcons();
+    document.getElementById('menu-toggle').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
